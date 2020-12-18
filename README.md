@@ -23,9 +23,12 @@ As the news sank in, everyone wanted to know how they managed to do this. I mean
 
 But first, a little context. In baseball, every pitch consists of a pretty complicated sequence of events, the main part being the pitcher and catcher getting on the same page about what pitch to throw next. This is done with hand signals that the catcher gives to the pitcher, one finger for fastball, two fingers for curveball, etc., only the signs are much more complicated and the actual sign of the pitch is disguised in a sequence of signs designed to provide some security against anyone on the opposing team who might be watching. The pitcher can accept the catcher’s sign, or shake him off and ask for a different sign. Once they finally agree, the pitcher delivers the pitch.
 
-(image here of bregman on 2nd with explanation of stealing signs)
+<p align="center">
+  <img src="https://github.com/iamcalebjones/Benefits-of-Cheating-a-2017-Baseball-Study/blob/main/plots_and_images/Screen%20Shot%202020-12-18%20at%202.09.43%20PM.png" width=1000>
+  <pcaption>A runner on second base has a clear view of the catcher. If he has time to pick up the sign and communicate it to the batter before the pitch, this breaks no rules and is a legal way to steal signs.</pcaption>
+</p>
 
-Usually, the only time the signs are at risk of being picked up by the opponent is when the team who is batting has a runner on 2nd base, as this position on the field gives the base runner a clear view of the catcher’s signs. What the Astros did was have a camera installed in center field aimed at the catcher. The video was fed to the club house, where analysts were tasked with firstly deciphering the signs, then communicating the signs to a player in the dugout. This player then communicated the stolen sign to the batter via banging on a trash can. One bang for fastball, two bangs for curveball, etc. Yes, bangs on a trash can.
+Usually, the only time the signs are at risk of being picked up by the opponent is when the team who is batting has a runner on 2nd base (see image above), as this position on the field gives the base runner a clear view of the catcher’s signs. What the Astros did was have a camera installed in center field aimed at the catcher. The video was fed to the club house, where analysts were tasked with firstly deciphering the signs, then communicating the signs to a player in the dugout. This player then communicated the stolen sign to the batter via banging on a trash can. One bang for fastball, two bangs for curveball, etc. Yes, bangs on a trash can.
 
 All this matters. Pitchers work hard at being able to deliver their pitches so that they appear the same to the batter when the ball leaves the hand, and only as the pitch makes its way towards the batter does the spin on the ball begin to influence how it flies. Batters work hard at being able to identify what the pitch is as early as possible so they know how to swing, when to swing, or if they should even swing at all. If the batter knows what the pitch will be before it is thrown, this gives him a serious advantage over the pitcher.
 
@@ -49,3 +52,12 @@ The fact that the signs were stolen via a camera installed in center field meant
 * Some metadata about the audio adn video evidence used to generate the data
 
 From here going forward, mentions of ‘bangs’ refers to a pitch that had the sign stolen and was communicated to the batter via the banging on the trash can, the bang. This is how the instance was referred to in the data compiled by Tony Adams above, and I carried the convention through my analysis as well. I did eventually start referring to pitches with no bangs as clean pitches, so that shows up in my analysis, bangs or clean pitches.
+
+To support the bangs dataset, relevant batting statistics were needed. Nothing is more fundamental than batting average. The formula for batting average is the number of **hits** divided by the number of **at bats**. 
+
+<p align="center">
+  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b1a9a962a9a544aa68480dfacb4a5d4f63ff92c0" alt="{\displaystyle AVG={\frac {H}{AB}}">
+</p>
+
+Sometimes a player comes up to bat and may get hit by a pitch, and be awarded a free pass to first base. This appearance does not count as an at bat, so there is a distinction made to catch all outcomes of stepping into the batter’s box: a **plate appearance** is just that, stepping up to bat. An **at bat** is a plate appearance that ends in either a hit or a strikeout. There are some other minor special cases for at bat classifications, but this working definition catches the most important cases.
+
