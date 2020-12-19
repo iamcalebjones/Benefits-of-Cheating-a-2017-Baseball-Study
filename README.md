@@ -125,3 +125,7 @@ For future analysis to further support this conclusion, I plan to continue worki
 Another thing I didn't have time to look at was what kinds of pitches each batter received bangs for compared to pitches they are known to be weaker batting against. Does a batter really struggle with curveballs, and did he receive more bangs when the pitch was a curveball, and did this help his performance against those pitches? Looking at the data from this perspective could provide deeper insights into the benefits these players might have gained.
 
 Thanks for reading.
+
+<p align="center">
+  <img src="https://github.com/iamcalebjones/Benefits-of-Cheating-a-2017-Baseball-Study/blob/main/plots_and_images/Houston_Astros_logo_logotype_emblem_symbol.png" width=500>
+</p>
