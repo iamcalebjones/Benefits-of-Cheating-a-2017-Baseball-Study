@@ -1,5 +1,5 @@
 # Benefits of Cheating - a 2017 Baseball Study
-## A look at how much, if at all, stealing pitch signs helped the 2017 Astros
+## A look at the competitive advantage the 2017 Astros received by stealing signs
 #### by Caleb Jones
 [LinkedIn](https://www.linkedin.com/in/calebsjones/) | [GitHub](https://github.com/iamcalebjones) | [Presentation Slides](https://docs.google.com/presentation/d/1EHvNUX0hRqJepVOc2ngxzcHWRqIDS_4hiC8plM3Wd6Y/edit?usp=sharing)
 
