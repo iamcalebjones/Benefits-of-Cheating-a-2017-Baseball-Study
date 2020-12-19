@@ -1,23 +1,23 @@
 # Benefits of Cheating - a 2017 Baseball Study
-### A look at how much, if at all, stealing pitch signs helped the 2017 Astros
+## A look at how much, if at all, stealing pitch signs helped the 2017 Astros
 
 <p align="center">
   <img src="https://github.com/iamcalebjones/Benefits-of-Cheating-a-2017-Baseball-Study/blob/main/plots_and_images/Screen%20Shot%202020-12-17%20at%209.48.13%20PM.png">
 </p>
 
 
-### Introduction
+## Introduction
 
 The 2017 baseball season was memorable for most everyone who pays attention to baseball. 
 For fans of the Houston Astros, like myself, it was an incredible season, which ended with a World Series win. For fans of any other baseball team, the Houston Astros winning the 2017 World Series is almost fully discounted. And the reason for that is the subject of this project: the 2017 Houston Astros Sign Stealing Scandal.
 
 
-### Background
+## Background
 
 In early November 2019, just days after the Astros lost the 2019 World Series to the Washington Nationals, Astros fans’ hearts were broken again with allegations that the Astros had cheated in 2017 by stealing pitch signs during games and feeding that information to their batters. The implications of this, if true, cast serious doubts about the legitimacy of their 2017 World Series win. 
 
 
-### How It Was Done
+## How It Was Done
 
 As the news sank in, everyone wanted to know how they managed to do this. I mean, c’mon! In a stadium packed with fans game after game, how did they pull this off? Former players began to speak up about this and provided that information. 
 
@@ -33,12 +33,12 @@ Usually, the only time the signs are at risk of being picked up by the opponent 
 All this matters. Pitchers work hard at being able to deliver their pitches so that they appear the same to the batter when the ball leaves the hand, and only as the pitch makes its way towards the batter does the spin on the ball begin to influence how it flies. Batters work hard at being able to identify what the pitch is as early as possible so they know how to swing, when to swing, or if they should even swing at all. If the batter knows what the pitch will be before it is thrown, this gives him a serious advantage over the pitcher.
 
 
-### Focus of This Study
+## Focus of This Study
 
 Wanting to preserve the legitimacy of the World Series title, I had one main question: **Did knowing the signs actually improve the Astros abilities at the plate?** Baseball is just as much about the game as it is about the stats, and every season massive amounts of data and stats on each player and team are generated. If knowing the signs actually did benefit the Astros, surely this would be evident somewhere in the data.
 
 
-### The Data
+## The Data
 
 The fact that the signs were stolen via a camera installed in center field meant that only home games were involved in this scheme. Away games provided no ability to cheat in this manner, so right away only 81 of the 162 games in the 2017 season were candidates for the study. The main data source for the bangs came from http://signstealingscandal.com/. Tony Adams, a programmer and Astros fan, had rewatched all the home games for the season, generated a spectrogram for every pitch, which is a visual representation of an audio file, visually picked out the audio signature of the bangs in the spectrogram, and recorded the relevant info in a database. He did this for every pitch in 58 of the 81 home games, almost 8300 pitches, and the relevant information he collected for every one of these pitches included the following:
 
@@ -64,12 +64,29 @@ Sometimes a player comes up to bat and may get hit by a pitch, for which he is a
 Initially I wanted to find batting average stats updated per at bat for each player, but I didn’t find this information out there. There is plenty of raw data available to calculate this on my own, but I was pretty sure this would have taken most of my available time so I kept looking for the next best thing, batting average updated per game. I did find this data, at the granddaddy of all baseball records, https://www.retrosheet.org/. 
 
 <image of retrosheet screenshot of a player’s stats page>
-<caption>Example of the web page scraped for constructing career batting average tables for each player.</caption>
+
+<p align="center">
+  <img src="https://github.com/iamcalebjones/Benefits-of-Cheating-a-2017-Baseball-Study/blob/main/plots_and_images/Screen%20Shot%202020-12-18%20at%204.12.13%20PM.png" width=1000>
+  <caption>Example of the web page scraped for constructing career batting average tables for each player.</caption>
+</p>
 
 This is a historical collection of nearly every stat and every game for almost all of baseball history. I was able to scrape the batting average data from the website and construct career batting average tables for each player on the team, which I then plotted as a part of the data analysis. 
 
-### Analysis
+## Analysis
 Of the 20 batters represented in the bangs database, I chose to focus on batters who saw at least 300 pitches, 15% or more of which were bangs. This narrowed the list of batters to include down to 7 batters. 
 
-The main parts of my analysis included looking at how many runs were generated by players for pitches with bangs and for clean pitches, and then plotting their career batting averages.
+The main parts of my analysis included developing a new baseball statistic, which I called Runs per 100 At Bats, or RABs for short. This stat is simply the number of runs batted in divided by the number of at bats, multiplied by 100 for the sake of being more logical. It makes much more sense to report that a batter generates 8.6 runs per 100 at bats than it does to say that a batter generates 0.086 runs per at bat.
 
+|              |Pitches with Bangs|Total Pitches|Bangs Percent|Bang AB Runs Generated|Bang Runs per 100 AB (RAB)|Clean AB Runs Generated|Clean Runs per 100 AB (RAB)|
+| -------------- |:----------------:|:-----------:|:-----------:|:--------------------:|:------------------:|:---------------------:|:-------------------:|
+|Alex Bregman    |133               |800          |16.62        |7                     |8.6                 |13                     |6.3                  |
+|Carlos Beltran  |138               |762          |18.11        |0                     |0                   |10                     |5.4                  |
+|Carlos Correa   |97                |594          |16.33        |3                     |6.1                 |13                     |9.3                  |
+|Evan Gattis     |71                |427          |16.63        |1                     |2.8                 |9                      |7.9                  |
+|George Springer |139               |933          |14.90        |0                     |0                   |22                     |10.0                 |
+|Jake Marisnick  |83                |364          |22.80        |4                     |10.0                |8                      |9.1                  |
+|Jose Altuve     |24                |866          |2.77         |2                     |9.1                 |19                     |8                    |
+|Marwin Gonzalez |147               |776          |18.94        |2                     |2.9                 |18                     |10.1                 |
+|Yuli Gurriel    |120               |670          |17.91        |5                     |7.4                 |16                     |8.4                  |
+
+From the data in the table, there are a few players that have a higher RAB
