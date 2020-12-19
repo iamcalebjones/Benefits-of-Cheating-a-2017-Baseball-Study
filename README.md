@@ -1,5 +1,5 @@
 # Benefits of Cheating - a 2017 Baseball Study
-## A look at the competitive advantage the 2017 Astros received by stealing signs
+## A look at the competitive advantage the 2017 Astros gained by stealing signs
 #### by Caleb Jones
 [LinkedIn](https://www.linkedin.com/in/calebsjones/) | [GitHub](https://github.com/iamcalebjones) | [Presentation Slides](https://docs.google.com/presentation/d/1EHvNUX0hRqJepVOc2ngxzcHWRqIDS_4hiC8plM3Wd6Y/edit?usp=sharing)
 
@@ -12,7 +12,7 @@
 ## Introduction
 
 The 2017 baseball season was memorable for most everyone who pays attention to baseball. 
-For fans of the Houston Astros, like myself, it was an incredible season, which ended with a World Series win. For fans of any other baseball team, the Houston Astros winning the 2017 World Series is almost fully discounted. And the reason for that is the subject of this project: the 2017 Houston Astros Sign Stealing Scandal.
+For fans of the Houston Astros like myself, it was an incredible season which ended with a World Series win. For fans of any other baseball team, the Houston Astros winning the 2017 World Series is almost fully discounted. And the reason for that is the subject of this project: the 2017 Houston Astros Sign Stealing Scandal.
 
 
 ## Background
@@ -40,7 +40,7 @@ All this matters. Pitchers work hard at being able to deliver their pitches so t
 
 ## Focus of This Study
 
-Wanting to preserve the legitimacy of the World Series title, I had one main question: **Did knowing the signs actually improve the Astros abilities at the plate?** Baseball is just as much about the game as it is about the stats, and every season massive amounts of data and stats on each player and team are generated. If knowing the signs actually did benefit the Astros, surely this would be evident somewhere in the data.
+Wanting to preserve the legitimacy of the World Series title, I had one main question: **Did knowing the signs give the Astros batters a competitive advantage at the plate?** Baseball is just as much about the game as it is about the stats, and every season massive amounts of data and stats on each player and team are generated. If knowing the signs actually did benefit the Astros, surely this would be evident somewhere in the data.
 
 
 ## The Data
@@ -116,4 +116,12 @@ I included this plot for Jose Altuve to illustrate the kind of trends that can b
 
 ## Conclusion and Further Analysis
 
-This report focused on just part of the team
+At this point in time, it is well accepted that the 2017 Astros did in fact cheat. There is plenty of evidence on game videos where the bangs can clearly be heard. This report was more interested in determining what competitive advantage cheating gave the players on the team, and only a subset of the players for a portion of the season were looked at.
+
+There is evidence in the data that this cheating scheme did in fact give some players a competitive advantage which allowed them to perform better and generate more runs for the team. However, for most of them, this was not the case. That's the thing with baseball, there is a wealth of information available to do all this analysis and determine how a player will perform, but we are still talking about people. They do things that don't fit the trends or expected performance, they slump, they have streaks of great performance, and all of this makes looking at just a small slice of a season a challenge.
+
+For future analysis to further support this conclusion, I plan to continue working with this RAB stat and seeing how that looks along the conventional offensive stats like batting average and RBIs when expanded to a whole season. The reason for developing this was to have a better stat for determining a player's offensive capabilities, so this could be a valuable tool in the analysis of what advantage this cheating scheme gave each player.
+
+Another thing I didn't have time to look at was what kinds of pitches each batter received bangs for compared to pitches they are known to be weaker batting against. Does a batter really struggle with curveballs, and did he receive more bangs when the pitch was a curveball, and did this help his performance against those pitches? Looking at the data from this perspective could provide deeper insights into the benefits these players might have gained.
+
+Thanks for reading.
